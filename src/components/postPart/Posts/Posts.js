@@ -3,8 +3,11 @@ import {useEffect, useState} from "react";
 import Post from "../Post/Post";
 
 import './Posts.css'
+import FullPost from "../FullPost/FullPost";
 
-export default function Posts () {
+
+
+export default function Posts ({lift}) {
 
     let [posts, setPosts] = useState([]);
 
@@ -18,10 +21,14 @@ export default function Posts () {
     }, []);
 
 
+
+
     return (<div className='ListOfPosts' >
 
+            <FullPost lift={lift}/>
+
             {
-                posts.map(item => <Post item={item} key={item.id}/>)
+                posts.map(item => <Post item={item} key={item.id} lift={lift}/>)
             }
 
 

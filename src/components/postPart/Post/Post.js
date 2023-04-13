@@ -1,14 +1,22 @@
 import React from "react";
+
 import './Post.css'
 
 
-const Post = ({ item }) => {
+const Post = ({item, lift}) => {
+
     return (
+
         <div className='Post'>
             <p>
                 Id - {item.id} <br />
+
                 <div style={{ fontWeight: 'bold', fontSize: '20px' }}>{item.title}</div> <br />
-                <button>Hello</button>
+
+                <button onClick={() => {
+                 lift(item)
+                }}>Hello</button>
+
             </p>
         </div>
     );
