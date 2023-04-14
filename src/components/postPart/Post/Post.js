@@ -13,9 +13,9 @@ const Post = ({item, lift}) => {
 
                 <div style={{ fontWeight: 'bold', fontSize: '20px' }}>{item.title}</div> <br />
 
-                <button onClick={() => {
-                 lift(item)
-                }}>Hello</button>
+                <button onClick={() => {lift(item)}}>
+                    Hello
+                </button>
 
             </p>
         </div>

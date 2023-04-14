@@ -1,3 +1,5 @@
+import {useState} from "react";
+
 import Posts from "./components/postPart/Posts/Posts";
 
 import './App.css';
@@ -5,16 +7,18 @@ import './App.css';
 
 function App() {
 
+    let [takenPost, setTakenPost] = useState(null);
+
     const lift = (obj) => {
-        console.log(obj)
+        setTakenPost({...obj})
     }
 
     return (
         <div className="App">
 
-
-            <Posts lift={lift}/>
-
+            <div className='PostPart'>
+                <Posts lift={lift} value = {takenPost}/>
+            </div>
 
         </div>
     );
