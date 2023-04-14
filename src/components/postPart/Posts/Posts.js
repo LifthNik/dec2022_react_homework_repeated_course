@@ -9,7 +9,7 @@ import './Posts.css'
 
 export default function Posts ({lift, value}) {
 
-    let [posts, setPosts] = useState([]);
+    const [posts, setPosts] = useState([]);
 
     useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/posts`)
