@@ -1,5 +1,6 @@
 button {
     color: black;
+
     padding: 10px;
     border-radius: 10px;
 }
@@ -8,7 +9,11 @@ button:hover {
 }
 
 .Post {
+    width: 25%;
+
     margin: 10px 0;
     padding: 10px;
+    border-radius: 10px;
+
     background-color: #f0f0f0 ;
 }
