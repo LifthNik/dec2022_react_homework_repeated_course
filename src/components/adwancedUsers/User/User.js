@@ -1,20 +1,26 @@
+import {useEffect, useState} from "react";
+
 import './User.css'
 
 export default function User ({item}) {
 
-    const takePost = () => fetch(`https://jsonplaceholder.typicode.com/users/${item.id}/posts`)
-        .then(items => items.json())
-        .then(item => {
-            console.log(item)
-        });
+    const [posts, setPosts] = useState(null);
 
-    return (<div className='User'>
+    useEffect(() => {
+        fetch(`https://jsonplaceholder.typicode.com/users/${item.id}/posts`)
+            .then(items => items.json())
+            .then(item => {
+                setPosts(item)
+                console.log(item)
+            });
 
-           {item.name}
-            <button onClick={() => {takePost()}}/>
+    }, []);
+
+    return (
+        <div className='User'>
+
+            {item.name}
 
         </div>
-
-
     );
 };

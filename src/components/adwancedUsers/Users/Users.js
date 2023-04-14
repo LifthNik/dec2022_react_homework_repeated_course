@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 
 import User from "../User/User";
+import PostsOfUser from "../PostsOfUser/PostsOfUser";
 
 import './Users.css'
 
@@ -21,6 +22,7 @@ export default function Users () {
     return (<div className = 'Users'>
 
             {users.map(item => <User item={item} key={item.id}/>)}
+            <PostsOfUser/>
 
         </div>
     );
