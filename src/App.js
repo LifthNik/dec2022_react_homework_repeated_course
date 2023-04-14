@@ -24,6 +24,9 @@ function App() {
             <div className='RocketsPart'>
                 <Rockets/>
             </div>
+            <div className='usersPart'>
+                <div>Hello</div>
+            </div>
 
 
 

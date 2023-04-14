@@ -1,9 +1,16 @@
-.PostPart {
-    width: 40%;
-
-    float: left;
+.App{
+    display: flex;
 }
-.RocketsPart {
 
+.PostPart {
+    width: 50%;
+}
 
+.RocketsPart{
+    width: 70%;
+}
+
+.usersPart{
+    background-color: #00fc00;
+    width: 50%;
 }
