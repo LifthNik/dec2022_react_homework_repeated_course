@@ -1,7 +1,7 @@
-export default function PostsOfUser () {
+export default function PostsOfUser ({item}) {
 
     return (<div className = 'PostsOfUser'>
-                PostsOfUser
+            {item.body}
         </div>
     );
 };
