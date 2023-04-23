@@ -1,7 +1,7 @@
 import './Rocket.css'
 
 
-export default function Rocket({ item }) {
+export default function Rocket({item}) {
     return (
         <div className="Rocket">
             <div className="Rocket-details">

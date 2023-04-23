@@ -2,6 +2,7 @@ import {useState} from "react";
 
 import Posts from "./components/postPart/Posts/Posts";
 import Rockets from "./components/spaceXPart/ROckets/Rockets";
+import Users from "./components/UsersPostRart/Users/Users/Users";
 
 import './App.css';
 
@@ -24,6 +25,10 @@ function App() {
 
             <div className='RocketsPart'>
                 <Rockets/>
+            </div>
+
+            <div className='UserPostPart'>
+                <Users/>
             </div>
 
 

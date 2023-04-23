@@ -1,0 +1,38 @@
+.UsersList {
+    flex-basis: 40%;
+}
+
+.User {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.GetPostsButton {
+    margin-left: auto;
+}
+
+.UserPosts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .UsersPosts {
+        flex-direction: column;
+    }
+
+    .UsersList {
+        flex-basis: 100%;
+    }
+
+    .UserPosts {
+        flex-basis: 100%;
+    }
+}

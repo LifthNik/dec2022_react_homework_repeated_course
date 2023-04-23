@@ -1,0 +1,19 @@
+.Post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Post h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Post p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
