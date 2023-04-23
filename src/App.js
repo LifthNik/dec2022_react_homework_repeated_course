@@ -2,7 +2,7 @@ import {useState} from "react";
 
 import Posts from "./components/postPart/Posts/Posts";
 import Rockets from "./components/spaceXPart/ROckets/Rockets";
-import Users from "./components/UsersPostRart/Users/Users/Users";
+import Users from "./components/UsersPostRart/Users/UsersAndServices/Users";
 
 import './App.css';
 

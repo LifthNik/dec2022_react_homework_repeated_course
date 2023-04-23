@@ -2,7 +2,7 @@ import './Post.css'
 
 export default function Post({ post }) {
     return (
-        <div className="Post">
+        <div className="PostOfUser">
             {post ? (
                 <>
                     <h3>{post.title}</h3>
