@@ -5,6 +5,7 @@ import Rockets from "./components/spaceXPart/ROckets/Rockets";
 import Users from "./components/UsersPostRart/Users/UsersAndServices/Users";
 
 import './App.css';
+import Post from "./components/UsersPostRart/Posts/Post/Post";
 
 
 function App() {

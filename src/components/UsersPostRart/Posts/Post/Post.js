@@ -1,6 +1,6 @@
 import './Post.css'
 
-export default function Post({ post }) {
+export default function Post({post}) {
     return (
         <div className="PostOfUser">
             {post ? (
